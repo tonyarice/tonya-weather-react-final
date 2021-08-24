@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from "react";
+import "./index.css";
 import './App.css';
+import Weather from "./Weather";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+     
+      <Weather defaultCity="Richmond" />
+      <footer>
+        This project was coded by Tonya Rice and is {" "}
+      <a href="https://github.com/tonyarice/tonya-react-project-weather" target="blank" rel="noreferrer">open-sourced on GitHub</a>.
+      </footer>
+    </div>
     </div>
   );
 }
 
-export default App;
+
