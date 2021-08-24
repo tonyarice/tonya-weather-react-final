@@ -17,8 +17,8 @@ export default function WeatherInfo(props) {
                 <div className="col-6">
                     <div className="d-flex weather-temperature">
                     <div className="float-left"> 
-                    {props.data.icon} 
-         
+                    <img src={`http://openweathermap.org/img/wn/${props.data.icon}@2x.png`} alt="weather" /> 
+
                         </div>
                     
                     <div className="float-left">
@@ -32,6 +32,8 @@ export default function WeatherInfo(props) {
                     <li>Precipitation: 9%</li>
                     <li>Humidity: {props.data.humidity}%</li>
                     <li>Wind: {Math.round(props.data.wind)} mph</li>
+                    <li>Sunrise: 06:15 am</li>
+                    <li>Sunset: 08:45 pm</li>
                     </ul>
                 </div>
             </div>
