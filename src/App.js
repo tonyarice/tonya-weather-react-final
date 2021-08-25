@@ -11,7 +11,7 @@ export default function App() {
       <Weather defaultCity="Richmond" />
       <footer>
         This project was coded by Tonya Rice and is {" "}
-      <a href="https://github.com/tonyarice/tonya-react-project-weather" target="blank" rel="noreferrer">open-sourced on GitHub</a>.
+      <a href="https://github.com/tonyarice/tonya-weather-react-final" target="blank" rel="noreferrer">open-sourced on GitHub</a>.
       </footer>
     </div>
     </div>
