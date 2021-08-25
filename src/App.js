@@ -2,10 +2,12 @@ import React from "react";
 import "./index.css";
 import './App.css';
 import Weather from "./Weather";
+import BirdFlight from "./BirdFlight";
 
 export default function App() {
   return (
     <div className="App">
+      <BirdFlight />
       <div className="container">
      
       <Weather defaultCity="Richmond" />
