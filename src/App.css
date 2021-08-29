@@ -4,8 +4,11 @@ body {
 background-repeat: no-repeat;
 margin: 0;
 background-attachment: fixed;
+background-image: url("images/beach-84531_1920.jpg");
+
   
 }
+
 
 
 .App {
@@ -21,4 +24,8 @@ background-attachment: fixed;
 
 .App footer a:link {
   text-decoration: none; 
+}
+
+.credit {
+  color: lightgrey;
 }

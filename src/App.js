@@ -7,12 +7,14 @@ import BirdFlight from "./BirdFlight";
 export default function App() {
   return (
     <div className="App">
+      
       <BirdFlight />
+      
       <div className="container">
      
       <Weather defaultCity="Richmond" />
-      <footer>
-        This project was coded by Tonya Rice and is {" "}
+      <footer><span className="credit">
+        🐈This project was coded by Tonya Rice and is {" "}</span>
       <a href="https://github.com/tonyarice/tonya-weather-react-final" target="blank" rel="noreferrer">open-sourced on GitHub</a>.
       </footer>
     </div>
