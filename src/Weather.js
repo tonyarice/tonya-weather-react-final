@@ -25,9 +25,7 @@ export default function Weather(props) {
             description: response.data.weather[0].description,
             humidity: response.data.main.humidity,
             sunrise: response.data.sys.sunrise,
-
-
-        
+            sunset: response.data.sys.sunset,
         });
     }
 

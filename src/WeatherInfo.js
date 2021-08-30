@@ -34,7 +34,8 @@ export default function WeatherInfo(props) {
                     {/* <li>Precipitation: {props.data.pop}%</li> */}
                     <li>Humidity: {props.data.humidity}%</li>
                     <li>Wind: {Math.round(props.data.wind)} mph</li>
-                    <li>Sunrise: <SunTime time={props.data.sys.sunrise} am/></li>
+                    <li>Sunrise: <SunTime time={props.data.sunrise}/> am</li>
+                    <li>Sunset: <SunTime time={props.data.sunset}/> pm</li>
                     </ul>
                 </div>
             </div>

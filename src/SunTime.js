@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function SunTime(timestamp, props) {
-    let date = new Date(timestamp * 1000);
+export default function SunTime(props) {
+    let date = new Date(props.time * 1000);
 
-  let hours = props.date.getHours() % 12;
+  let hours = date.getHours() % 12;
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = props.date.getMinutes();
+  let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
