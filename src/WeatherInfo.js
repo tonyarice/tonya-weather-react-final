@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import SunTime from "./SunTime";
 
 
 
@@ -33,7 +34,7 @@ export default function WeatherInfo(props) {
                     {/* <li>Precipitation: {props.data.pop}%</li> */}
                     <li>Humidity: {props.data.humidity}%</li>
                     <li>Wind: {Math.round(props.data.wind)} mph</li>
-                   
+                    <li>Sunrise: <SunTime time={props.data.sys.sunrise} am/></li>
                     </ul>
                 </div>
             </div>
