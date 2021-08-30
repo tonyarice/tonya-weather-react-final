@@ -6,9 +6,8 @@ import WeatherForecast from "./WeatherForecast";
 
 
 
-export default function Weather(props) {
-   
 
+export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ready : false});
     const [city, setCity] = useState(props.defaultCity);
     
@@ -27,12 +26,13 @@ export default function Weather(props) {
             sunrise: response.data.sys.sunrise,
             sunset: response.data.sys.sunset,
         });
+        
     }
 
     function search() {
        let apiKey = "16cd6fd99fc921f3bd2763bbd7c2b61b";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-        console.log(apiUrl);
+        
         axios.get(apiUrl).then(handleResponse);
     }
 

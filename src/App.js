@@ -25,7 +25,7 @@ export default function App() {
           /></a>
       <footer><span className="credit">
         🐈This project was coded by Tonya Rice and is {" "}</span>
-      <a href="https://github.com/tonyarice/tonya-weather-react-final" target="blank" rel="noreferrer">open-sourced on GitHub</a>.
+      <a href="https://github.com/tonyarice/tonya-weather-react-final" target="blank" rel="noreferrer">open-sourced on GitHub</a>.<a href="https://app.netlify.com/sites/nostalgic-hoover-d17535/overview" target="blank" rel="noreferrer"> Hosted on Netlify</a>.
       </footer>
     </div>
     </div>
