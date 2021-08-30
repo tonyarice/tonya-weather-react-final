@@ -11,6 +11,10 @@ background-attachment: fixed;
   transform: scaleX(-1);
 }
 
+.WeatherWrapper {
+  background-color: rgb(236, 190, 198);
+ 
+}
 
 
 .App {

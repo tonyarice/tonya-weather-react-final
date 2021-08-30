@@ -67,10 +67,10 @@
 }
 
 .btn-primary {
-    background: rosybrown;
+    background: rgb(211, 137, 137);
     border: tan;
 }
 
 .btn-primary:hover {
-    background-color: tan;
+    background-color: pink;
 }

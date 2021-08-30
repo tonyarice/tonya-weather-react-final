@@ -13,8 +13,9 @@ export default function App() {
      <BirdFlight />
       
       <div className="container">
-      
+      <div className="WeatherWrapper">
       <Weather defaultCity="Richmond" />
+      </div>
       <a
             href="https://www.animatedimages.org/cat-birds-230.htm"
             className="bird-line"
