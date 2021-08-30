@@ -4,15 +4,25 @@ import './App.css';
 import Weather from "./Weather";
 import BirdFlight from "./BirdFlight";
 
+
+
+
 export default function App() {
   return (
     <div className="App">
-      
-      <BirdFlight />
+     <BirdFlight />
       
       <div className="container">
-     
+      
       <Weather defaultCity="Richmond" />
+      <a
+            href="https://www.animatedimages.org/cat-birds-230.htm"
+            className="bird-line"
+            ><img
+              src="https://www.animatedimages.org/data/media/230/animated-bird-image-0509.gif"
+              border="0"
+              alt="animated-birds"
+          /></a>
       <footer><span className="credit">
         🐈This project was coded by Tonya Rice and is {" "}</span>
       <a href="https://github.com/tonyarice/tonya-weather-react-final" target="blank" rel="noreferrer">open-sourced on GitHub</a>.

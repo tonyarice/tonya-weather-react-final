@@ -1,5 +1,6 @@
-.img {
-    background-position: left top;
-    background-repeat: repeat-x;
+ img {
+    position: absolute;
+    right: 5;
+    top: 5;
     
 }

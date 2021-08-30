@@ -4,9 +4,11 @@ body {
 background-repeat: no-repeat;
 margin: 0;
 background-attachment: fixed;
-background-image: url("images/beach-84531_1920.jpg");
 
-  
+}
+
+.bird-line img {
+  transform: scaleX(-1);
 }
 
 
@@ -16,6 +18,8 @@ background-image: url("images/beach-84531_1920.jpg");
   margin: 30px auto;
   
 }
+
+
 
 .App footer {
   font-size: 11px;
@@ -27,5 +31,5 @@ background-image: url("images/beach-84531_1920.jpg");
 }
 
 .credit {
-  color: lightgrey;
+  color: darkslategray;
 }

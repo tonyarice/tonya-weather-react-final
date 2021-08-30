@@ -5,7 +5,10 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
 
+
 export default function Weather(props) {
+   
+
     const [weatherData, setWeatherData] = useState({ready : false});
     const [city, setCity] = useState(props.defaultCity);
     
@@ -21,13 +24,15 @@ export default function Weather(props) {
             icon: response.data.weather[0].icon,
             description: response.data.weather[0].description,
             humidity: response.data.main.humidity,
+            sunrise: response.data.sys.sunrise,
+
 
         
         });
     }
 
     function search() {
-        let apiKey = "16cd6fd99fc921f3bd2763bbd7c2b61b";
+       let apiKey = "16cd6fd99fc921f3bd2763bbd7c2b61b";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
         console.log(apiUrl);
         axios.get(apiUrl).then(handleResponse);
@@ -44,27 +49,34 @@ export default function Weather(props) {
 
     }
 
+
+
     if (weatherData.ready) {
         return (
             <div className="Weather">
                 <form onSubmit={handleSubmit}>
                     <div className="row">
-                        <div className="col-8">
+                        <div className="col-10">
+                        
                     <input type="search" placeholder="Enter a city..." className="form-control" autoFocus="on" onChange={handleCityChange} />
+                    
                     </div>
                     <div className="col-2">
                 <input type="submit" value="Search" className="btn btn-primary" />
                 </div>
-                <div className="col-2">
-                    <input type="submit" value="Current" class="btn btn-success" />
                 </div>
-                </div>
-                </form>
+
+                
+                
+               </form>
+                
                 <WeatherInfo data={weatherData}/>
                 <WeatherForecast coordinates={weatherData.coordinates} />
                 
                 </div>      
         );
+
+    
 
     } else {
         search();
