@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export default function SunTime(props) {
     let date = new Date(props.time * 1000);
