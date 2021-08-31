@@ -5,7 +5,7 @@
     padding: 15px;
     
     
-    color: rgb(135, 135, 135);
+    color: rgb(48, 47, 47);
 }
 
 .Weather .container {
@@ -43,7 +43,7 @@
 
 .Weather .temperature {
     font-size: 64px;
-    color: darkgray;
+    color: rgb(146, 63, 63);
     line-height: 64px;
     font-weight: 400;
     
